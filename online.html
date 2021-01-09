@@ -84,11 +84,11 @@
 
 
   <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Doctor1')"> <img src="d1.jpg" alt="" height="150px" width="200px"></button>
-    <button class="tablinks" onclick="openCity(event, 'Doctor2')"><img src="d2.jpg" alt="" height="150px" width="200px"></button>
-    <button class="tablinks" onclick="openCity(event, 'Doctor3')"><img src="d3.jpg" alt="" height="150px" width="200px"></button>
-    <button class="tablinks" onclick="openCity(event, 'Doctor4')"><img src="D.jpg" alt="" height="150px" width="200px"></button>
-    <button class="tablinks" onclick="openCity(event, 'Doctor5')"><img src="d4.jfif" alt="" height="150px" width="200px"></button>
+    <button class="tablinks" onclick="openDoc(event, 'Doctor1')"> <img src="d1.jpg" alt="" height="150px" width="200px"></button>
+    <button class="tablinks" onclick="openDoc(event, 'Doctor2')"><img src="d2.jpg" alt="" height="150px" width="200px"></button>
+    <button class="tablinks" onclick="openDoc(event, 'Doctor3')"><img src="d3.jpg" alt="" height="150px" width="200px"></button>
+    <button class="tablinks" onclick="openDoc(event, 'Doctor4')"><img src="D.jpg" alt="" height="150px" width="200px"></button>
+    <button class="tablinks" onclick="openDoc(event, 'Doctor5')"><img src="d4.jfif" alt="" height="150px" width="200px"></button>
 
   </div>
 
@@ -274,7 +274,7 @@
   </div>
 
   <script>
-    function openCity(evt, cityName) {
+    function openDoc(evt, NameDoc) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
@@ -284,7 +284,7 @@
       for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
       }
-      document.getElementById(cityName).style.display = "block";
+      document.getElementById(NameDoc).style.display = "block";
       evt.currentTarget.className += " active";
     }
   </script>
