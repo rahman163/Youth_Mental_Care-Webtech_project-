@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Team</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Style the tab */
+    .tab {
+      align-content: center;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #451faf;
+      padding-left: 70px;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: rgb(97, 182, 221);
+      float: left;
+
+      outline: none;
+      cursor: pointer;
+      padding: 14px 20px;
+      transition: 0.3s;
+      font-size: 17px;
+
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="container">
+      <img src="logo.png" alt="" width="10%" height="100" style="border-radius:150px; float:left; padding-top: 5px;">
+      <li><a href='homepage.html'>Home</a></li>
+      <li><a href='services.html'>Services</a></li>
+
+      <li class='dropdown'>
+        <a href='Team.html'>Team </a>
+        <div class='mega-menu'>
+          <div class="container">
+
+            <div class="item">
+
+              <ul>
+                <li><a href='online.html'>Online Specialist</a></li>
+                <li><a href='offline.html'>Offline Specialist</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li><!-- /.dropdown -->
+      <!-- .dropdown -->
+      <li><a href='Webtechproject.html'>Appointment</a></li>
+
+      <li><a href='contact.html'>Conatct</a></li>
+    </ul><!-- .container -->
+  </nav>
+  <center>
+    <h2>Our Online Specialist</h2>
+  </center>
+
+
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Doctor1')"> <img src="d1.jpg" alt="" height="150px" width="200px"></button>
+    <button class="tablinks" onclick="openCity(event, 'Doctor2')"><img src="d2.jpg" alt="" height="150px" width="200px"></button>
+    <button class="tablinks" onclick="openCity(event, 'Doctor3')"><img src="d3.jpg" alt="" height="150px" width="200px"></button>
+    <button class="tablinks" onclick="openCity(event, 'Doctor4')"><img src="D.jpg" alt="" height="150px" width="200px"></button>
+    <button class="tablinks" onclick="openCity(event, 'Doctor5')"><img src="d4.jfif" alt="" height="150px" width="200px"></button>
+
+  </div>
+
+  <div id="Doctor1" class="tabcontent">
+    <div style="text-align: center;">
+      <h3>Dr. Mayture Yap </h3>
+      <h4> Master of Clinical Psychology</h4>
+      <p>Mayture is a practicing Clinical Psychologist whose focus is on providing psychological
+        interventions that involves assessment, psychotherapy and trainings related to mental health issues.
+        Her therapeutic services are delivered through an array of
+        humanistic and cognitive behavioral techniques with the aim of facilitating individual's cognitive,
+        emotional and psychosocial development.</p>
+
+      <p>Throughout her practice as a Clinical Psychologist,
+        Mayture has various experiences on providing psychological assessments to evaluate personality,
+        cognitive, behavioral and emotional functioning for both teenagers and adults.
+        She also has various experiences working with women and children who are survivors of
+        domestic violence as well as with the marginalized population,
+        mainly refugees, by providing psychological intervention and trainings.</p>
+
+      <p>At present, Mayture is a private practitioner working closely with other mental health
+        professionals such as Psychiatrists and Counsellors.
+        She is also a co-founder of InPsych (Psychological & Counselling Services). Her areas of interests are on
+        developing interpersonal & communication skills, building self-esteem, conflict resolution,
+        obsessive-compulsive disorder and the management of anxiety and trauma related issues.</p>
+      <h4>Area of Interest</h4>
+      <ul>
+        <li>OCD</li>
+        <li>Anxiety (Adult)</li>
+        <li>Interpersonal & Communication</li>
+        <li>Grief</li>
+        <li>Depression</li>
+      </ul>
+      <h4>Language</h4>
+      <ul>
+        <li>English</li>
+        <li>Chinese</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="Doctor2" class="tabcontent">
+    <div style="text-align: center;">
+      <h3>Low Yaw Dong</h3>
+      <h4> Master of Clinical Psychology</h4>
+      <p>Yaw Dong is a Clinical Psychologist who is enthusiastic in serving the community.
+        He is trained in providing psychotherapy to adults with various difficulties,
+        such as depression, anxiety and stress, as well as handling clients with psychosis.
+        Yaw Dong also has experiences in managing children with behavioral and emotional challenges.</p>
+
+      <p>During his practice, Yaw Dong has also been providing his services in NGOs through public talks,
+        tele-counselling, face-to-face counselling, volunteer training and home visits.
+        Yaw Dong has a special interest in mindfulness based and self-exploratory approaches</p>
+      <h4>Area of Interest</h4>
+      <ul>
+        <li>CBT</li>
+        <li>Anxiety (Adult)</li>
+        <li>Mindfulness</li>
+        <li>Grief</li>
+        <li>Assessment</li>
+        <li>Teenager self-development</li>
+      </ul>
+      <h4>Language</h4>
+      <ul>
+        <li>English</li>
+        <li>Chinese (Cantonese & Mandarin)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="Doctor3" class="tabcontent">
+    <div style="text-align: center;">
+      <h3>Soh Teng Kuann</h3>
+      <h4>Master of Social Science (Counselling Psychology)</h4>
+      <h4>Bachelor of Social Science (Psychology)</h4>
+      <p>Teng Kuann is a counselling psychologist who provides mental health counselling for teenagers, adults, couples and families.
+        He also co-founded InPsych Psychological & Counselling Services. He is a registered counsellor with the board of counsellor Malaysia,
+        LKM (Lembaga Kaunselor Malaysia). He provides individual,
+        couple and group counselling for clients with mental health concerns, career, relationship,
+        family and life crisis. Since 2012, Teng Kuann has been practicing counselling as a registered counsellor.
+        He has served clients from all walks of life in his practices, including secondary school students,
+        college and university students, working adults, couple with romance and marrital issues, and refugees.
+        He is also actively providing trainings on self-development and psychological wellness mainly
+        to young adults as he believes one will live a better and meaningful life if the knowledge is learned during this stage of life.</p>
+
+      <h4>Expertise/ Strength</h4>
+      <p>Helping people to work through difficulties in their life and making changes that they wanted.</p>
+
+      <h4>Skills</h4>
+      <p>Facilitating interaction between individuals in group to foster group dynamic, cohesiveness and growth.</p>
+      <p>Working through difficult issues with relevant and achievable steps by attending to emotions and thoughts.</p>
+      <p>Administer and interpret psychological assessments tools for personal growth & career development.</p>
+      <h4>Area of Interest</h4>
+
+      <ul>
+        <li>Life transitions, Stress and Coping</li>
+        <li>Intimacy relationship, couple and marital</li>
+        <li>Emotional awareness and regulation</li>
+        <li>Self-growth and self awareness</li>
+        <li>Depression & Anxiety</li>
+      </ul>
+      <h4>Language</h4>
+      <ul>
+        <li>English</li>
+        <li>Chinese (Cantonese & Mandarin)</li>
+        <li>Bahasa Malaysia</li>
+      </ul>
+    </div>
+  </div>
+  <div id="Doctor4" class="tabcontent">
+    <div style="text-align: center;">
+      <h3>Dr. Teoh Hee Chong</h3>
+      <h4>Phd Eduication Psychology</h4>
+      <h4>Education Psychologist Education Consultant Speaker/ Trainer</h4>
+      <p>Dr. Teoh specializes in Education Psychology and has many years of experiences in teaching
+        and providing his services as a lecturer and counselor in various higher education institutions and secondary schools.
+        He was also appointed as the Head of Curriculum Department in the United Chinese School Committees’ Association of Malaysia.
+        Currently, he works as a part-time lecturer in several colleges/universities such as Wawasan Open University (WOU)
+        and Tunku Abdul Rahman University College (TARUC), teaching educational related subjects. In addition to that,
+        Dr. Teoh provides trainings to educator in independent Chinese schools and organized various camps
+        and workshop for students and youth all around the country. When he is not lecturing or providing talks,
+        Dr. Teoh conducts educational research. Some of his works were being published in The International Journal of The Humanities,
+        American Journal of Applied Psychology and Journal of Educational and Social Research.</p>
+
+      <p>Dr. Teoh has high interest in youth issues, and is highly involved in organizing camp and workshop related to youth activities.
+        His areas of specialties in public lecture are on life education, motivation, and parenting styles. At InPsych,
+        Dr. Teoh provides consultation to parents, teachers and youths on education related issues such as how to improve learning,
+        identifying learning strengths and weaknesses, managing exam stress and improving learning motivation.</p>
+      <h4>Area of Interest</h4>
+      <ul>
+        <li>Teaching enhancement</li>
+        <li>Learning related issues</li>
+        <li>Educational research</li>
+        <li>Motivation</li>
+        <li>Curriculum development</li>
+      </ul>
+      <h4>Language</h4>
+      <ul>
+        <li>English</li>
+        <li>Chinese</li>
+        <li>Bahasa Malaysia</li>
+      </ul>
+    </div>
+  </div>
+  <div id="Doctor5" class="tabcontent">
+    <div style="text-align: center;">
+      <h3>Dr. Keng Shian Ling</h3>
+      <h4> Ph.D. (Clinical Psychology), Duke University, USA</h4>
+      <h4> M.A. (Clinical Psychology), Duke University, USA</h4>
+      <h4>B.Sc. (Psychology and Biology), Duke University, USA </h4>
+      <p>Dr. Keng Shian Ling is a clinical psychologist specialized in treating adult psychopathology,
+        with a focus on mood disorders, anxiety disorders, emotion regulation issues,
+        and borderline personality disorder She received her PhD in Clinical Psychology from Duke University (USA),
+        and completed her clinical psychology residency at Centre for Addiction and Mental Health, Toronto, Canada.
+        She holds an appointment as Associate Professor of Psychology at Yale-NUS College,
+        and teaches courses in abnormal psychology and advanced clinical psychology.
+        Additionally, she runs a research program focusing on examining the efficacy and mechanisms of change of
+        mindfulness-based interventions,
+        as well as the adaptation, implementation, and dissemination of empirically-supported interventions in Malaysia. </p>
+
+      <p>Clinically, Dr. Keng has received training in cognitive behavior therapy (CBT),
+        dialectical behavior therapy (DBT), and other mindfulness-based approaches such as mindfulness-based cognitive therapy (MBCT).
+        She has worked in hospital and clinic settings with patients of a variety of presentations, including mood,
+        anxiety, substance use, eating, and personality disorders. She routinely provides training and workshops on DBT,
+        and is fluent in English and Mandarin Chinese. Her clinical practice is culturally sensitive and LGBTQ friendly,
+        and she aspires to help improve the quality and accessibility of mental health services in Southeast Asia through teaching,
+        research, clinical work, and advocacy.</p>
+
+      <h4>Area of Interest</h4>
+      <ul>
+        <li>Adult Psychopathology (e.g., depression, anxiety disorders, borderline personality disorder)</li>
+        <li>Emotion Regulation Issues</li>
+        <li>Cognitive Behavior Therapy</li>
+        <li>Dialectical Behavior Therapy</li>
+        <li>Mindfulness-based Interventions</li>
+      </ul>
+      <h4>Language</h4>
+      <ul>
+        <li>English</li>
+        <li>Chinese (Mandarin)</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+  <footer>
+    Web Technology All-rights reserved
+  </footer>
+</body>
+
+</html>

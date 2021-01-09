@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav>
+      <ul class="container">
+        <img src="logo.png" alt="" width="10%" height="100" style="border-radius:150px; float:left; padding-top: 5px;">
+        <li><a href='homepage.html'>Home</a></li>
+        <li><a href='services.html'>Services</a></li>
+
+        <li class='dropdown'>
+          <a href='Team.html'>Team </a>
+          <div class='mega-menu'>
+            <div class="container">
+
+              <div class="item">
+
+                <ul>
+                  <li><a href='online.html'>Online Specialist</a></li>
+                  <li><a href='offline.html'>Offline Specialist</a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li><!-- /.dropdown -->
+        <!-- .dropdown -->
+        <li><a href='Webtechproject.html'>Appointment</a></li>
+
+        <li><a href='contact.html'>Conatct</a></li>
+      </ul><!-- .container -->
+    </nav>
+
+  <br>
+  <div class="header">
+    <h1><center>Youth.Care</h1>
+    <h3><center>Mental Health Care</h3>
+    <center><p style="font-style:italic">"Everybody needs medical treatment in everywhere"</p>
+  </div>
+  <br>
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img2.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img3.png" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+</script>
+
+<br>
+<div class="about">
+  <center><h2>About Us</h2>
+    <center><p>Youth.Care is a non-profit voluntary organisation managed by an elected committee of interested persons and professionals in the community. Youth.Care was formed in 2020 by a group of mental health professionals and community leaders from International Islamic University Malaysia (IIUM). Our mission is to Promote mental health and create greater awareness on mental wellbeing and  illness in the community. We also advocate for positive attitudes towards mental health issues in particular, destigmatising mental illness. We provides several mental health services including diagnosis, mental test, counselling, group therapy. At Youth.Care, we take a holistic approach towards mental illness. We don’t think medication alone is the answer to the treatment of mental health disorders. Thus, we strive to integrate various approaches in the overall psychiatric rehabilitation programme.</p>
+
+</div>
+    <div class="socialmedia">
+      <br>
+      <center><h3>Join Our Community</h3>
+        <a href="#" class="fa fa-facebook"></a><br>
+        <a href="#" class="fa fa-twitter"></a><br>
+        <a href="#" class="fa fa-youtube"></a><br>
+        <a href="#" class="fa fa-instagram"></a><br>
+      <br>
+      <img src="campaign.jpg" alt="campaign" width="150px">
+      <img src="campaign2.jpg" alt="campaign" width="150px">
+      <img src="campaign3.jpg" alt="campaign" width="150px">
+      <img src="campaign4.jpg" alt="campaign" width="150px">
+      <br><br><br><br>
+    </div>
+
+<div class="basic">
+<h2>Learn More about Mental Health</h2>
+<button class="accordion"><strong>What is Mental Health</strong></button>
+<div class="panel">
+  <p>Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act.
+    It also helps determine how we handle stress, relate to others, and make choices. Mental health is important
+    at every stage of life, from childhood and adolescence through adulthood.</p>
+</div>
+
+<button class="accordion"><strong>Myth and Facts</strong></button>
+<div class="panel">
+  <ul>
+    <li><strong>Myth:</strong> Children don't experience mental health problems.</li>
+    <li><strong>Myth:</strong> Therapy and self-help are a waste of time. Why bother when you can just take a pill?</li>
+    <li><strong>Myth:</strong> People with mental health problems are violent and unpredictable.</li>
+  </ul>
+</div>
+
+<button class="accordion"><strong>Recovery</strong></button>
+<div class="panel">
+<h4>4 Dimension of Recovery</h4>
+<ul>
+  <li><strong>Health:</strong> Make informed, healthy choices that support physical and emotional well-being.</li>
+  <li><strong>Home:</strong> Have a stable and safe place to live.</li>
+  <li><strong>Purpose:</strong> Engage in meaningful daily activities, such as a job or school, volunteering,
+    caring for your family, or being creative.
+    Work for independence, income, and resources to participate in society.</li>
+  <li><strong>Community:</strong> Build relationships and social networks that provide support.</li>
+</ul>
+</div>
+
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+  </script>
+</div>
+<br>
+<div class="categories">
+  <h2><center>Our Services</h2>
+  <center><button id="diagnosis"><img src="diagnosis.jpg"></button>
+  <button id="test"><img src="mental test.jpg"></button>
+  <button id="counselling"><img src="counselling.jpg"></button>
+  <button id="therapy"><img src="group therapy.jpg"></button>
+<br>
+
+<center><button class="button1"><strong>Diagnosis</strong></button>
+  <button class="button2"><strong>Mental Test</strong></button>
+  <button class="button3"><strong>Counselling</strong></button>
+  <button class="button4"><strong>Group Therapy</strong></button>
+
+</div>
+<br><br><br>
+<footer>
+  Web Technology All-rights reserved
+</footer>
+
+  </body>
+</html>
